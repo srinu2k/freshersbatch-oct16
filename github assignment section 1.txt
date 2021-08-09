@@ -1,0 +1,165 @@
+Sushma@DESKTOP-AJSJVJA MINGW64 ~ (master)
+$ cd Desktop
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop (master)
+$ mkdir assignments
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop (master)
+$ cd assignments
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/assignments (master)
+$ git init
+Initialized empty Git repository in C:/Users/Sushma/Desktop/assignments/.git/
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/assignments (master)
+$ git add README.txt
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/assignments (master)
+$ git status .
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   README.txt
+
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/assignments (master)
+$ git commit -m "addidnt read me file"
+[master (root-commit) a1f89c7] addidnt read me file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.txt
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/assignments (master)
+$ git checkout -b html-assignments
+Switched to a new branch 'html-assignments'
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/assignments (html-assignments)
+$ git status .
+On branch html-assignments
+nothing to commit, working tree clean
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/assignments (html-assignments)
+$ git status .
+On branch html-assignments
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   README.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/assignments (html-assignments)
+$ git add README.txt
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/assignments (html-assignments)
+$ git commit -m "commiting readme"
+[html-assignments 82eb17b] commiting readme
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/assignments (html-assignments)
+$ git status .
+On branch html-assignments
+nothing to commit, working tree clean
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/assignments (html-assignments)
+$ git checkout master
+Switched to branch 'master'
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/assignments (master)
+$ git status .
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   README.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/assignments (master)
+$ git add README.txt
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/assignments (master)
+$ git commit -m "readme added in main branch"
+[master 7157943] readme added in main branch
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/assignments (master)
+$ git status .
+On branch master
+nothing to commit, working tree clean
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/assignments (master)
+$ git checkout html-assignments
+Switched to branch 'html-assignments'
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/assignments (html-assignments)
+$ git add README.txt
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/assignments (html-assignments)
+$ git commit -m "read me 4th time edited"
+[html-assignments 24f3de9] read me 4th time edited
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/assignments (html-assignments)
+$ git status .
+On branch html-assignments
+nothing to commit, working tree clean
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/assignments (html-assignments)
+$ git checkout master
+Switched to branch 'master'
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/assignments (master)
+$ git merge html-assignments
+Auto-merging README.txt
+CONFLICT (content): Merge conflict in README.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/assignments (master|MERGING)
+$ git status .
+On branch master
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+
+        both modified:   README.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/assignments (master|MERGING)
+$ git add README.txt
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/assignments (master|MERGING)
+$ git status .
+On branch master
+All conflicts fixed but you are still merging.
+  (use "git commit" to conclude merge)
+
+Changes to be committed:
+
+        modified:   README.txt
+
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/assignments (master|MERGING)
+$ git commit -m "total readme "
+[master 7d11313] total readme
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/assignments (master)
+$ git status .
+On branch master
+nothing to commit, working tree clean
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/assignments (master)
+$ git branch -d html-assignments
+Deleted branch html-assignments (was 24f3de9).
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/assignments (master)
+$

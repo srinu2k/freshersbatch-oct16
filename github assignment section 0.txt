@@ -1,0 +1,275 @@
+Sushma@DESKTOP-AJSJVJA MINGW64 ~ (master)
+$ cd Desktop
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop (master)
+$ mkdir project_dir
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop (master)
+$ cd project_dir
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/project_dir (master)
+$ git init
+Initialized empty Git repository in C:/Users/Sushma/Desktop/project_dir/.git/
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/project_dir (master)
+$ git status .
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/project_dir (master)
+$ git add index.html
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/project_dir (master)
+$ git status .
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   index.html
+
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/project_dir (master)
+$ git commit -m "commiting index file"
+[master (root-commit) 4c92e80] commiting index file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 index.html
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/project_dir (master)
+$ git status .
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        info.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/project_dir (master)
+$ touch .gitignore
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/project_dir (master)
+$ git status .
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .gitignore
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/project_dir (master)
+$ git add .gitignore
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/project_dir (master)
+$ git status .
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   .gitignore
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   index.html
+
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/project_dir (master)
+$ git commit -m "commiting gitignore files"
+[master a71a7db] commiting gitignore files
+ 1 file changed, 1 insertion(+)
+ create mode 100644 .gitignore
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/project_dir (master)
+$ git status .
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/project_dir (master)
+$ git add index.html
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/project_dir (master)
+$ git commit -m "commiting 2nd index file"
+[master 2cc259a] commiting 2nd index file
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/project_dir (master)
+$ git log
+commit 2cc259ac303b8ec249e169864af20cfcfdd2b963 (HEAD -> master)
+Author: J Sai Sushma Madhavi <sushirekha2@gmail.com>
+Date:   Thu Jul 29 15:47:24 2021 +0530
+
+    commiting 2nd index file
+
+commit a71a7db314722bc02805b4496cd8efbabe8c1ccf
+Author: J Sai Sushma Madhavi <sushirekha2@gmail.com>
+Date:   Thu Jul 29 15:46:08 2021 +0530
+
+    commiting gitignore files
+
+commit 4c92e804311ffae92ee8c0904a58fe6fc4650077
+Author: J Sai Sushma Madhavi <sushirekha2@gmail.com>
+Date:   Thu Jul 29 15:36:50 2021 +0530
+
+    commiting index file
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/project_dir (master)
+$ git add index.html
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/project_dir (master)
+$ git commit -m "index file edited"
+[master 5aca925] index file edited
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/project_dir (master)
+$ git revert HEAD
+hint: Waiting for your editor to close the file... 'C:\Program Files\Notepad++\n                                                                                            otepad++.exe' -multiInst -notabbar -nosession -noPlugin: C:\Program Files\Notepa                                                                                            d++\notepad++.exe: No such file or directory
+error: There was a problem with the editor ''C:\Program Files\Notepad++\notepad+                                                                                            +.exe' -multiInst -notabbar -nosession -noPlugin'.
+Please supply the message using either -m or -F option.
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/project_dir (master)
+$ git revert HEAD
+error: your local changes would be overwritten by revert.
+hint: commit your changes or stash them to proceed.
+fatal: revert failed
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/project_dir (master)
+$ git status .
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   index.html
+
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/project_dir (master)
+$ git commit -m "modified index"
+[master 21d41b9] modified index
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/project_dir (master)
+$ git r
+rebase         remote         replace        reset          rm
+reflog         repack         request-pull   revert
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/project_dir (master)
+$ git revert HEAD
+hint: Waiting for your editor to close the file... 'C:\Program Files\Notepad++\n                                                                                            otepad++.exe' -multiInst -notabbar -nosession -noPlugin: C:\Program Files\Notepa                                                                                            d++\notepad++.exe: No such file or directory
+error: There was a problem with the editor ''C:\Program Files\Notepad++\notepad+                                                                                            +.exe' -multiInst -notabbar -nosession -noPlugin'.
+Please supply the message using either -m or -F option.
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/project_dir (master)
+$ git revert HEAD
+error: your local changes would be overwritten by revert.
+hint: commit your changes or stash them to proceed.
+fatal: revert failed
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/project_dir (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   index.html
+
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/project_dir (master)
+$ ^C
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/project_dir (master)
+$ git config --global core.editor
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/project_dir (master)
+$ code --version
+bash: code: command not found
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/project_dir (master)
+$ git add index.html
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/project_dir (master)
+$ git commit -m "index file 3rd time"
+[master 74fc5b9] index file 3rd time
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/project_dir (master)
+$ git status .
+On branch master
+nothing to commit, working tree clean
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/project_dir (master)
+$ git revert HEAD
+hint: Waiting for your editor to close the file... 'C:\Program Files\Notepad++\notep                                                                                        ad++.exe' -multiInst -notabbar -nosession -noPlugin: C:\Program Files\Notepad++\note                                                                                        pad++.exe: No such file or directory
+error: There was a problem with the editor ''C:\Program Files\Notepad++\notepad++.ex                                                                                        e' -multiInst -notabbar -nosession -noPlugin'.
+Please supply the message using either -m or -F option.
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/project_dir (master)
+$ git config --global alias.myadd add
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/project_dir (master)
+$ git myadd index.html
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/project_dir (master)
+$ git status .
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   index.html
+
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/project_dir (master)
+$ git commit -m "index file reverted"
+[master de64403] index file reverted
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/project_dir (master)
+$ git status .
+On branch master
+nothing to commit, working tree clean
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/project_dir (master)
+$ git revert HEAD
+hint: Waiting for your editor to close the file... 'C:\Program Files\Notepad++\notepad++.exe' -multiInst -notabbar -nosession -noPlugin: C:\Program Files\Notepad++\notepad++.exe: No such file or directory
+error: There was a problem with the editor ''C:\Program Files\Notepad++\notepad++.exe' -multiInst -notabbar -nosession -noPlugin'.
+Please supply the message using either -m or -F option.
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/project_dir (master)
+$ git status .
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   index.html
+
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/project_dir (master)

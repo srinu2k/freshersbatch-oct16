@@ -1,0 +1,83 @@
+Sushma@DESKTOP-AJSJVJA MINGW64 ~ (master)
+$ cd Desktop
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop (master)
+$ cd assignments
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/assignments (master)
+$ git checkout -b js-assignments
+Switched to a new branch 'js-assignments'
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/assignments (js-assignments)
+$ git add README.txt
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/assignments (js-assignments)
+$ git commit -m " added new line to js assignments"
+[js-assignments 60ea516]  added new line to js assignments
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/assignments (js-assignments)
+$ git status .
+On branch js-assignments
+nothing to commit, working tree clean
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/assignments (js-assignments)
+$ git checkout master
+Switched to branch 'master'
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/assignments (master)
+$ git add README.txt
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/assignments (master)
+$ git commit -m "added ne readme to master branch"
+[master 862dff8] added ne readme to master branch
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/assignments (master)
+$ git status .
+On branch master
+nothing to commit, working tree clean
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/assignments (master)
+$ git checkout js-assignments
+Switched to branch 'js-assignments'
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/assignments (js-assignments)
+$ git add README.txt
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/assignments (js-assignments)
+$ git commit -m "added new readme to js assignments"
+[js-assignments d870994] added new readme to js assignments
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/assignments (js-assignments)
+$ git status .
+On branch js-assignments
+nothing to commit, working tree clean
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/assignments (js-assignments)
+$ git checkout master
+Switched to branch 'master'
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/assignments (master)
+$ git merge js-assignments
+Auto-merging README.txt
+CONFLICT (content): Merge conflict in README.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/assignments (master|MERGING)
+$ git add README.txt
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/assignments (master|MERGING)
+$ git commit -m "merged files"
+[master a13e4ba] merged files
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/assignments (master)
+$ git status .
+On branch master
+nothing to commit, working tree clean
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/Desktop/assignments (master)
+$ git branch -d js-assignments
+Deleted branch js-assignments (was d870994).
+

@@ -1,0 +1,91 @@
+Sushma@DESKTOP-AJSJVJA MINGW64 ~ (master)
+$ cd desktop
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/desktop (master)
+$ cd assignments
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/desktop/assignments (master)
+$ git checkout -b css-assignments
+Switched to a new branch 'css-assignments'
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/desktop/assignments (css-assignments)
+$ git status .
+On branch css-assignments
+nothing to commit, working tree clean
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/desktop/assignments (css-assignments)
+$ git add README.txt
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/desktop/assignments (css-assignments)
+$ git commit -m "Readme edited"
+[css-assignments 7fd93ce] Readme edited
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/desktop/assignments (css-assignments)
+$ git checkout master
+Switched to branch 'master'
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/desktop/assignments (master)
+$ git add README.txt
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/desktop/assignments (master)
+$ git commit -m "read me changed in master branch"
+[master 4782f24] read me changed in master branch
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/desktop/assignments (master)
+$ git status .
+On branch master
+nothing to commit, working tree clean
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/desktop/assignments (master)
+$ git checkout css-assignments
+Switched to branch 'css-assignments'
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/desktop/assignments (css-assignments)
+$ git add README.txt
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/desktop/assignments (css-assignments)
+$ git commit -m "added ne readme in css assignments"
+[css-assignments cd44fd1] added ne readme in css assignments
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/desktop/assignments (css-assignments)
+$ git status .
+On branch css-assignments
+nothing to commit, working tree clean
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/desktop/assignments (css-assignments)
+$ git checkout master
+Switched to branch 'master'
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/desktop/assignments (master)
+$ git merge css-assignments
+Auto-merging README.txt
+CONFLICT (content): Merge conflict in README.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/desktop/assignments (master|MERGING)
+$ git add README.txt
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/desktop/assignments (master|MERGING)
+$ git commit -m "removed pointers"
+[master eb8d602] removed pointers
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/desktop/assignments (master)
+$ git stuas .
+git: 'stuas' is not a git command. See 'git --help'.
+
+The most similar command is
+        stash
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/desktop/assignments (master)
+$ git status .
+On branch master
+nothing to commit, working tree clean
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/desktop/assignments (master)
+$ git branch -d css-assignments
+Deleted branch css-assignments (was cd44fd1).
+
+Sushma@DESKTOP-AJSJVJA MINGW64 ~/desktop/assignments (master)
