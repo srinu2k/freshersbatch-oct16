@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:util="http://www.springframework.org/schema/util"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    					http://www.springframework.org/schema/beans/spring-beans.xsd
+    					http://www.springframework.org/schema/context
+        				https://www.springframework.org/schema/context/spring-context.xsd">
+                    	
+    
+    <bean id="address" class="spring.core.question5.Address">
+    	<property name="street" value="Amberpet"/>
+    	<property name="city" value="Hyderabad"/>
+    	<property name="state" value="Telangana"/>
+    	<property name="zip" value="500013"/>
+    	<property name="country" value="India"/>
+    </bean>
+    
+    <bean id="customer" class="spring.core.question5.customer5">
+    	<property name="id" value="802"/>
+    	<!-- <property name="Address" ref="address"/> -->
+    </bean>
+    
+    <bean id="santosh" class="spring.core.question5.custcontact">
+    	<property name="name" value="Santosh"/>
+    	<property name="contact" value="1234567890"/>
+    </bean>
+    
+    <context:annotation-config/>
+    <context:component-scan base-package="spring.core.question5"/>
+    
+</beans>
