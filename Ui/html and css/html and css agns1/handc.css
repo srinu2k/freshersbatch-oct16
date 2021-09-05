@@ -1,0 +1,52 @@
+div.a{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+}
+div.b{
+    text-align: center;
+    font-size: 25px;
+}
+img{
+    display: block;
+    margin: auto;
+}
+div.c{
+    margin-left: 4px;
+    padding: 4px;
+    font-size: 24px;
+}
+div.d{
+    margin-left: 2px;
+    font-weight: bold;
+    font-size: 27px;
+    text-decoration: underline;
+    text-align: center;
+}
+p{
+    margin-left: 4px;
+    padding: 4px;
+}
+div.i{
+    font-weight: bold;
+    margin-left: 2px;
+    text-decoration: underline;
+    font-size: 27px;
+    text-align: center;
+}
+div.j{
+    font-size: 25px;
+}
+div.k{
+    text-align: center;
+}
+div.l{
+    text-align: center;
+    color: pink;
+    font-size: 50px;
+    background-color: red;
+}
+body
+{
+    background-color: papayawhip;
+}

@@ -1,0 +1,8 @@
+p .new{
+border: 4px solid black;
+size: 2px;
+}
+p .new1{
+    border: none;
+    size: 4px;
+}

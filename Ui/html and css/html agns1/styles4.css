@@ -1,0 +1,10 @@
+ div table.n1 td
+{
+    border:1px solid black;
+       border-collapse: collapse;
+       
+}
+table.n2
+{
+    border: none;
+}

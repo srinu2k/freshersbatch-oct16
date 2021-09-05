@@ -1,0 +1,15 @@
+div.a{
+    border: 2px solid black;
+    border-width: 8px;
+}
+div.b{
+    border: 2px solid black;
+    border-width: 5px;
+}
+div.c{
+    border: 2px solid black;
+    border-width: 2px;
+}
+div{
+    background-color: rgba(0, 255, 242, 0.493);
+}

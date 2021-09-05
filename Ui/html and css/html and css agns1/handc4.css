@@ -1,0 +1,45 @@
+div.header {
+    background-color: crimson;
+    text-align: center;
+    padding: 20px;
+    font-size: 25px;
+  }
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  .column {
+    float: left;
+    width: 33%;
+   background-color: darkgray;
+   margin: 1px;
+  }
+  .column2{
+    float: left;
+    width: 33%;
+   background-color: yellow;
+   margin: 1px;
+  }
+  .column3{
+    float: left;
+    width: 33%;
+   background-color: blueviolet;
+   margin: 1px;
+  }
+  .footer{
+    background-color: yellowgreen;
+    padding: 4px;
+    text-align: center;
+  }

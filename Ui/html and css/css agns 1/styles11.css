@@ -1,0 +1,7 @@
+div{
+    border: 2px solid red;
+    font-size: 225%;
+    outline-style: dotted;
+    outline-color: greenyellow;
+    outline-width: 0.2em;
+}

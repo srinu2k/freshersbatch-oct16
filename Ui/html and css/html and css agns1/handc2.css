@@ -1,0 +1,23 @@
+body{
+    background-color: rebeccapurple;
+}
+h1{
+    text-align: center;
+    color: wheat;
+}
+h3{
+    text-align: center;
+    color: white;
+}
+label{
+    color: honeydew;
+}
+div{
+    color: honeydew;
+    padding: 4px;
+}
+div.a{
+text-align: center;
+padding: 12px;
+}
+
